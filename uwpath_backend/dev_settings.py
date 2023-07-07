@@ -94,12 +94,8 @@ WSGI_APPLICATION = 'uwpath_backend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.oracle',
-        'NAME': os.getenv("ORACLE_DSN"),
-        'USER': os.getenv("DB_USER"),
-        'PASSWORD': os.getenv("DB_PASS"),
-        'HOST': os.getenv("DB_HOST"),
-        'PORT': os.getenv("DB_PORT")
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'uwpath.db',
     }
 }
 
